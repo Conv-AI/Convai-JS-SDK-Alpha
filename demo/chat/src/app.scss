@@ -1,0 +1,25 @@
+$color-primary-dark: green;
+$message-content-outgoing-bg-color: rgb(11, 96, 73);
+$message-content-outgoing-color: white;
+$message-content-incoming-bg-color: rgba(10, 14, 13, 0.1);
+$message-content-incoming-color: black;
+$message-input-content-editor-wrapper-bg-color: white;
+$message-input-content-editor-wrapper-border-radius: 1em;
+@import "@chatscope/chat-ui-kit-styles/themes/default/main";
+
+.cs-message-input__content-editor-wrapper {
+    border: solid 1px green;
+}
+
+.cs-message-input {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.cs-message-input .cs-message-input {
+    width: 85%;
+}
+
+.cs-main-container {
+    margin-bottom: 3%;
+}

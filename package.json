@@ -1,0 +1,23 @@
+{
+  "name": "convai-web-sdk",
+  "main": "dist/convai-web-client.js",
+  "browser": "dist/convai-web-client.umd.js",
+  "types": "dist/typings/convai_client.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "postbootstrap": "npm run lib:build",
+    "lib:build": "npm run clean && webpack && cp -r ./_proto ./dist/"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@improbable-eng/grpc-web": "^0.15.0",
+    "google-protobuf": "^3.21.2",
+    "msr": "^1.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.1",
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

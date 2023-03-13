@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "declaration": true,
+        "declarationDir": "./dist/typings",
+        "target": "es5",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "removeComments": true,
+        "noImplicitReturns": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "stripInternal": true,
+        "noFallthroughCasesInSwitch": true,
+        "outDir": "dist",
+        "noEmitOnError": true
+    },
+    "types": [
+        "node"
+    ],
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "_proto"
+    ]
+}
