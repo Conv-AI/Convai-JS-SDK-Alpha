@@ -221,6 +221,9 @@ export namespace GetResponseRequest {
     getSpeaker(): string;
     setSpeaker(value: string): void;
 
+    getLanguageCode(): string;
+    setLanguageCode(value: string): void;
+
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): GetResponseConfig.AsObject;
     static toObject(includeInstance: boolean, msg: GetResponseConfig): GetResponseConfig.AsObject;
@@ -239,6 +242,7 @@ export namespace GetResponseRequest {
       audioConfig?: AudioConfig.AsObject,
       actionConfig?: ActionConfig.AsObject,
       speaker: string,
+      languageCode: string,
     }
   }
 

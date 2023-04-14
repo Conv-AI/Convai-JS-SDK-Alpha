@@ -1710,7 +1710,8 @@ proto.service.GetResponseRequest.GetResponseConfig.toObject = function(includeIn
     sessionId: jspb.Message.getFieldWithDefault(msg, 4, ""),
     audioConfig: (f = msg.getAudioConfig()) && proto.service.AudioConfig.toObject(includeInstance, f),
     actionConfig: (f = msg.getActionConfig()) && proto.service.ActionConfig.toObject(includeInstance, f),
-    speaker: jspb.Message.getFieldWithDefault(msg, 7, "")
+    speaker: jspb.Message.getFieldWithDefault(msg, 7, ""),
+    languageCode: jspb.Message.getFieldWithDefault(msg, 8, "")
   };
 
   if (includeInstance) {
@@ -1772,6 +1773,10 @@ proto.service.GetResponseRequest.GetResponseConfig.deserializeBinaryFromReader =
     case 7:
       var value = /** @type {string} */ (reader.readString());
       msg.setSpeaker(value);
+      break;
+    case 8:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setLanguageCode(value);
       break;
     default:
       reader.skipField();
@@ -1843,6 +1848,13 @@ proto.service.GetResponseRequest.GetResponseConfig.serializeBinaryToWriter = fun
   if (f.length > 0) {
     writer.writeString(
       7,
+      f
+    );
+  }
+  f = message.getLanguageCode();
+  if (f.length > 0) {
+    writer.writeString(
+      8,
       f
     );
   }
@@ -1992,6 +2004,24 @@ proto.service.GetResponseRequest.GetResponseConfig.prototype.getSpeaker = functi
  */
 proto.service.GetResponseRequest.GetResponseConfig.prototype.setSpeaker = function(value) {
   return jspb.Message.setProto3StringField(this, 7, value);
+};
+
+
+/**
+ * optional string language_code = 8;
+ * @return {string}
+ */
+proto.service.GetResponseRequest.GetResponseConfig.prototype.getLanguageCode = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 8, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.service.GetResponseRequest.GetResponseConfig} returns this
+ */
+proto.service.GetResponseRequest.GetResponseConfig.prototype.setLanguageCode = function(value) {
+  return jspb.Message.setProto3StringField(this, 8, value);
 };
 
 

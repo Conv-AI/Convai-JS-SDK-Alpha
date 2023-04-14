@@ -37,4 +37,15 @@ module.exports = [{
         libraryTarget: 'umd',
         globalObject: 'this'
     }
+},
+{
+    name: 'lib-min',
+    ...LIB_BASE_CONFIG,
+    target: 'web',
+    output: {
+        path: DIST_DIR,
+        filename: `convai-web-client.min.js`,
+        library: 'convai',
+        libraryTarget: 'umd'
+    }
 }];

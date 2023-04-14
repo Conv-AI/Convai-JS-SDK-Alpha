@@ -70,3 +70,24 @@ vim src/constants.ts
 npm run start
 # App will start at http://localhost:8081.
 ```
+
+### Sample Interactive Avatar Application using ThreeJS
+
+Open the terminal from the project root.
+
+```sh
+cd demo/talking-avatar
+# Install all dependencies
+npm install
+# Add Convai API Key and Character ID in src/constants.ts
+vim src/constants.js
+# Run app on localhost
+npm run start
+# App will start at http://localhost:3000.
+```
+
+
+https://user-images.githubusercontent.com/1998396/229350106-e9c8897f-9eee-4add-a833-17f6210f3c05.mov
+
+
+
