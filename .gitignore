@@ -1,6 +1,4 @@
 node_modules
 /src
 /_proto
-webpack.config.js
-tsconfig.json
 package-lock.json
