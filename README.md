@@ -1,3 +1,5 @@
+### This repository is not being maintained anymore. Please refer [ https://github.com/Conv-AI/Convai-Web-SDK-Interna](https://github.com/Conv-AI/Convai-Web-SDK) for updated code. This repository will be deprecated soon.
+
 # Convai-Web-SDK: Interact with your favorite characters from the web browser
 
 ### Get started
