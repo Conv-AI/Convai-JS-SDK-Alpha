@@ -76,7 +76,7 @@ export default function App() {
       window.removeEventListener('keydown', handleSpacebarPress);
       window.removeEventListener('keyup', handleSpacebarRelease);
     };
-  }, [keyPressed]);
+  });
 
 
   return (
